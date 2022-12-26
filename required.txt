@@ -1,0 +1,9 @@
+puthon
+   numpy
+   panda
+   sklearn
+   flask
+NLP
+
+html
+css

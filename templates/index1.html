@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Input File</title>
+
+    <style>
+        .card {
+            border: 5px solid #ff1dce;
+            width: 320px;
+            margin: 10px;
+            padding: 40px;
+            border-radius: 5px;
+            transition: 0.1s ease-in-out;
+        }
+
+        .card:hover {
+            width: 400px;
+            height: 500px;
+        }
+
+        .img-card {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .flexbox {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        body {
+            background-color: #66d6ab;
+        }
+
+        .hello1 {
+            border: 5px solid #342082;
+            border-radius: 5px;
+        }
+        .btnn{
+            margin: 2rem -8rem;
+        }
+        .col{
+            color:#c61a09;
+        }
+    </style>
+
+</head>
+
+<body>
+    <center>
+        <form action="/submit" method="post">
+            <h3>Disease Prediction</h3>
+
+            {% if result %}
+            <div class='col'>
+                <b>
+            {{result}}
+
+                </b>
+            </div>
+
+            {% endif %}
+
+            <textarea name="hello" rows="5" cols="90" >
+            
+             </textarea><br/> 
+         
+            <input  type="submit" value="Predict" >
+            
+        </form>
+    </center>
+
+    <div class="flexbox">
+
+        <div class="card">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.qUuOB5gxmw5VNofUg9atTwHaE8&pid=Api&P=0" class="img-card"
+                alt="">
+            <h3>D I A B E T E S</h3>
+            <h3 style="color:#008000;">Follow Me</h3>
+            <p>1. Lose extra weight<br>
+                2. Be more physically active<br>
+                3. Eat healthy plant foods<br>
+                4. Eat healthy fats<br>
+                5. Skip fad diets and make healthier choices
+            </p>
+
+        </div>
+        <div class="card">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.Pd1eevuu7AXuwv5bRMDlIAHaFY&pid=Api&P=0" class="img-card"
+                alt="">
+            <h3>B L O O D P R E S S U R E</h3>
+            <h3 style="color:#008000;">Follow Me</h3>
+            <p>1.Eat a Healthy Diet<br>
+                2.Keep Yourself at a Healthy Weight<br>
+                3.Be Physically Active<br>
+                4.Do Not Smoke<br>
+                5.Get Enough Sleep
+            </p>
+
+        </div>
+        <div class="card">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.Iagi8Ulb0IFdApleNvpR6wHaE7&pid=Api&P=0" class="img-card"
+                alt="">
+            <h3>H E A R T D I S E A S E</h3>
+            <h3 style="color:#008000">Follow Me</h3>
+            <p>1.Don't smoke or use tobacco<br>
+                2. Get moving: Aim for at least 30 to 60 minutes of activity daily<br>
+                3. Eat a heart-healthy diet<br>
+                4. Maintain a healthy weight<br>
+                5. Get good quality sleep<br>
+                6. Manage stress<br>
+                7. Get regular health screenings
+            </p>
+
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
